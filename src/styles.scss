@@ -1,4 +1,107 @@
 .header-section {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .logo {
+        height: 800px;
+        width: 800px;
+    }
+}
+
+.eva-section, .tom-section, .news-section {
+    min-height: 100vh;
+    border: solid 4px black;
+    border-left: none;
+    border-right: none;
+
+    .section-text {
+        text-align: center;
+        font-size: 64px;
+    }
+}
+
+.news-section .news-container {
+    display: flex;
+    flex-direction: column;
+
+    .news-item {
+        height: 100px;
+        border: solid 4px black;
+        width: calc(50% - 8px);
+        
+        .item-title {
+            font-size: 36px;
+            margin-left: 16px;
+        }
+
+        &.odd {
+            align-self: flex-start;
+        }
+
+        &.even {
+            align-self: flex-end;
+        }
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 64px;
+}
+
+.team-section {
+    .team-title {
+        font-size: 56px;
+        text-align: center;
+    }
+
+    .members-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .team-member {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 33.333%;
+        }
+    }
+}
+
+.sponsors-section {
+    text-align: center;
+    .sponsors-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        .sponsor {
+            width: 200px;
+            height: 50px;
+            border: solid 2px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 8px;
+        }
+    }
+}
+
+.socials-section .socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .social {
+        width: 200px;
+        height: 50px;
+        border: solid 2px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+    }
 }
