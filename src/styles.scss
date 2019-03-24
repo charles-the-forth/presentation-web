@@ -28,7 +28,6 @@ body {
 
 .eva-section, .tom-section, .news-section {
     min-height: 100vh;
-    border: solid 4px black;
     border-left: none;
     border-right: none;
 
@@ -40,25 +39,23 @@ body {
 
 .news-section .news-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    .news-item {
-        height: 100px;
-        border: solid 4px black;
-        width: calc(50% - 8px);
-        
+    .odd-news-container .news-item , .even-news-container .news-item {
+        width: calc(100% - 16px);
+        padding: 8px;
+
         .item-title {
             font-size: 36px;
-            margin-left: 16px;
         }
+    }
 
-        &.odd {
-            align-self: flex-start;
-        }
+    .odd-news-container {
+        width: 100%;
+    }
 
-        &.even {
-            align-self: flex-end;
-        }
+    .even-news-container {
+        display: none;
     }
 }
 
@@ -126,5 +123,32 @@ body {
 @media only screen and (orientation: landscape) {
     .header-section {
         background-size: 100% auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .news-section .news-container {
+        .odd-news-container, .even-news-container {
+            width: calc(50% - 18px);
+            .news-item.hide {
+                visibility: hidden;
+            }
+        }
+
+        .odd-news-container {
+            display: block;
+            border-right: solid 2px black;
+        }
+
+        .even-news-container {
+            display: block;
+            border-left: solid 2px black;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .news-section .news-container {
+        margin: 0 128px;
     }
 }
