@@ -1,0 +1,66 @@
+.header-section {
+    min-height: 100vh;
+    background-image: url("../../images/background.png");
+    background-size: auto 100%;
+    background-position: center center;
+
+    .gradient-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.4);
+        min-height: calc(100vh - 64px);
+        padding: 32px;
+        width: calc(100% - 64px);
+
+        .logo {
+            margin-top: 48px;
+            height: 250px;
+            width: 250px;
+            opacity: 0;
+        }
+
+        .arrow-down-button {
+            margin-top: 48px;
+            height: 64px;
+            background: transparent;
+            border: none;
+            outline: none;
+            opacity: 0;
+            cursor: pointer;
+
+            .arrow-down {
+                height: 64px;
+            }
+        }
+
+        .logo, .arrow-down-button {
+            &.opacity-transition-750ms {
+                opacity: 1;
+                transition: 0.75s opacity ease;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header-section .gradient-container {
+        .logo {
+            margin-top: 72px;
+            height: 350px;
+            width: 350px;
+        }
+
+        .arrow-down-button {
+            margin-top: 72px;
+        }
+    }   
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-section .gradient-container .logo {
+        height: 400px;
+        width: 400px;
+    }   
+}
