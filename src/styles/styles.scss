@@ -1,4 +1,5 @@
 @import './parts/header.scss';
+@import './parts/team.scss';
 
 body {
     margin: 0;
@@ -40,26 +41,6 @@ body {
 .section-title {
     text-align: center;
     font-size: 64px;
-}
-
-.team-section {
-    .team-title {
-        font-size: 56px;
-        text-align: center;
-    }
-
-    .members-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        .team-member {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-        }
-    }
 }
 
 .sponsors-section {

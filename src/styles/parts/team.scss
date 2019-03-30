@@ -1,0 +1,42 @@
+.team-section {
+    .team-title {
+        font-size: 56px;
+        text-align: center;
+    }
+
+    .members-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 32px;
+
+            .member-profile {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 16px;
+            }
+
+            .member-name {
+                margin: 0;
+                font-size: 32px;
+            }
+
+            .member-position {
+                margin: 8px 0 8px 0;
+                font-size: 24px;
+            }
+
+            .member-email {
+                color: black;
+                font-size: 18px;
+            }
+        }
+    }
+}
