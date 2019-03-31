@@ -1,0 +1,69 @@
+.sponsors-section {
+    text-align: center;
+
+    .sponsors-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        .sponsor {
+            cursor: pointer;
+            margin: 16px;
+
+            &.spse, &.spse .logo {
+                height: 120px;
+            }
+
+            &.prusa-research, &.prusa-research .logo {
+                height: 120px;
+            }
+
+            &.arduino-shop, &.arduino-shop .logo {
+                height: 72px;
+            }
+
+            &.svitilny, &.svitilny .logo {
+                height: 72px;
+            }
+
+            &.radio-shop, &.radio-shop .logo {
+                height: 48px;
+            }
+        }
+    }
+
+    .text {
+        font-size: 28px;
+        .link {
+            color: black;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sponsors-section {
+        padding: 0 32px;
+
+        .sponsors-container .sponsor {
+            &.spse, &.spse .logo {
+                height: 72px;
+            }
+    
+            &.prusa-research, &.prusa-research .logo {
+                height: 72px;
+            }
+    
+            &.svitilny, &.svitilny .logo {
+                height: 72px;
+            }
+    
+            &.radio-shop, &.radio-shop .logo {
+                height: 48px;
+            }
+        }
+    }   
+}

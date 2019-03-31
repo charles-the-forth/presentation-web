@@ -1,5 +1,6 @@
 @import './parts/header.scss';
 @import './parts/team.scss';
+@import './parts/sponsors.scss';
 
 body {
     margin: 0;
@@ -41,26 +42,6 @@ body {
 .section-title {
     text-align: center;
     font-size: 64px;
-}
-
-.sponsors-section {
-    text-align: center;
-    .sponsors-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    
-        .sponsor {
-            width: 200px;
-            height: 50px;
-            border: solid 2px black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 8px;
-        }
-    }
 }
 
 .socials-section .socials-container {
