@@ -1,0 +1,118 @@
+.news-section .news-container {
+    display: flex;
+    flex-direction: row;
+
+    .odd-news-container .news-item , .even-news-container .news-item {
+        width: calc(100% - 16px);
+        padding: 8px;
+        height: 150px;
+
+        &.hide {
+            height: 88px;
+        }
+
+        .dot {
+            display: none;
+        }
+
+        .item-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .item-date {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .item-text {
+            margin: 0 0 6px 0;
+        }
+
+        .item-link {
+            color: black;
+        }
+    }
+
+    .odd-news-container {
+        width: 100%;
+    }
+
+    .even-news-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .news-section .news-container {
+        margin: 0 32px;
+        .odd-news-container, .even-news-container {
+            width: calc(50% - 18px);
+            .news-item {
+                max-width: 500px;
+                .dot {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: black;
+                    border-radius: 50%;
+                    position: relative;
+                }
+
+
+
+                &.hide {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .odd-news-container {
+            display: flex;
+            border-right: solid 2px black;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 31px;
+
+            .news-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                
+                .content {
+                    flex: 1;
+                }
+
+                .dot {
+                    left: 22px;
+                }
+            }
+        }
+
+        .even-news-container {
+            display: flex;
+            border-left: solid 2px black;
+            align-self: flex-end;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 31px;
+
+            .news-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .dot {
+                    left: -22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .news-section .news-container {
+        margin: 0 128px;
+    }
+}

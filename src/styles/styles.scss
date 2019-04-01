@@ -2,6 +2,7 @@
 @import './parts/team.scss';
 @import './parts/sponsors.scss';
 @import './parts/socials.scss';
+@import './parts/news.scss';
 
 body {
     margin: 0;
@@ -22,28 +23,6 @@ body {
     }
 }
 
-.news-section .news-container {
-    display: flex;
-    flex-direction: row;
-
-    .odd-news-container .news-item , .even-news-container .news-item {
-        width: calc(100% - 16px);
-        padding: 8px;
-
-        .item-title {
-            font-size: 36px;
-        }
-    }
-
-    .odd-news-container {
-        width: 100%;
-    }
-
-    .even-news-container {
-        display: none;
-    }
-}
-
 .section-title {
     text-align: center;
     font-size: 64px;
@@ -52,32 +31,5 @@ body {
 @media only screen and (orientation: landscape) {
     .header-section {
         background-size: 100% auto;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .news-section .news-container {
-        .odd-news-container, .even-news-container {
-            width: calc(50% - 18px);
-            .news-item.hide {
-                visibility: hidden;
-            }
-        }
-
-        .odd-news-container {
-            display: block;
-            border-right: solid 2px black;
-        }
-
-        .even-news-container {
-            display: block;
-            border-left: solid 2px black;
-        }
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .news-section .news-container {
-        margin: 0 128px;
     }
 }
