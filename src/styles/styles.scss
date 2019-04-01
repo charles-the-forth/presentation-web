@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .eva-section, .tom-section, .news-section {
     min-height: 100vh;
     border-left: none;
