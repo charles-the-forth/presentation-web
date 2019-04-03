@@ -48,6 +48,11 @@
                 font-size: 18px;
                 max-width: 200px;
                 padding-left: 0;
+
+                .measured-value .text{
+                    text-align: left;
+                    margin: 6px 0;
+                }
             }
         }
     }
@@ -85,6 +90,16 @@
                 margin: 0;
                 font-size: 18px;
             }
+        }
+    }
+
+    .cansat-section.tom-section .content {
+        flex-direction: row-reverse;
+        .image {
+            max-width: 500px;
+        }
+        .text-content {
+            padding-right: 32px;
         }
     }
 }
