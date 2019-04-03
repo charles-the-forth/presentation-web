@@ -3,6 +3,7 @@
 @import './parts/sponsors.scss';
 @import './parts/socials.scss';
 @import './parts/news.scss';
+@import './parts/cansat-section.scss';
 
 body {
     margin: 0;
@@ -12,20 +13,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.eva-section, .tom-section, .news-section {
-    min-height: 100vh;
-    border-left: none;
-    border-right: none;
-
-    .section-text {
-        text-align: center;
-        font-size: 64px;
-    }
-}
-
 .section-title {
     text-align: center;
-    font-size: 64px;
+    font-size: 48px;
 }
 
 @media only screen and (orientation: landscape) {

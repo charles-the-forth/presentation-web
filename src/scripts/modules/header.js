@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 });
 
 window.scrollDown = function() {
-    const newsSection = document.getElementById('js-news-section');
+    const newsSection = document.getElementById('js-eva-section');
     window.scrollTo({
         top: newsSection.offsetTop,
         behavior: 'smooth'

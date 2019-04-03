@@ -5,13 +5,24 @@
     margin-bottom: 32px;
 
     .social {
-        height: 64px;
+        height: 48px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 16px;
+        margin: 0 12px;
         cursor: pointer;
 
+        .logo {
+            height: 48px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .socials-section .socials-container .social {
+        height: 64px;
+        margin: 0 16px;
+    
         .logo {
             height: 64px;
         }
