@@ -1,8 +1,8 @@
-.news-section .news-container {
+.progress-section .progress-container {
     display: flex;
     flex-direction: row;
 
-    .odd-news-container .news-item , .even-news-container .news-item {
+    .odd-progress-container .progress-item , .even-progress-container .progress-item {
         width: calc(100% - 16px);
         padding: 8px;
         max-width: 400px;
@@ -29,7 +29,7 @@
         }
     }
 
-    .odd-news-container {
+    .odd-progress-container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -37,17 +37,17 @@
         align-items: center;
     }
 
-    .even-news-container {
+    .even-progress-container {
         display: none;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .news-section .news-container {
+    .progress-section .progress-container {
         margin: 0 32px;
-        .odd-news-container, .even-news-container {
+        .odd-progress-container, .even-progress-container {
             width: calc(50% - 18px);
-            .news-item {
+            .progress-item {
                 width: 318px;
                 height: 150px;
                 max-width: 318px;
@@ -68,14 +68,14 @@
             }
         }
 
-        .odd-news-container {
+        .odd-progress-container {
             display: flex;
             border-right: solid 2px black;
             flex-direction: column;
             align-items: flex-end;
             padding-top: 31px;
 
-            .news-item {
+            .progress-item {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -90,7 +90,7 @@
             }
         }
 
-        .even-news-container {
+        .even-progress-container {
             display: flex;
             border-left: solid 2px black;
             align-self: flex-end;
@@ -98,7 +98,7 @@
             align-items: flex-start;
             padding-bottom: 31px;
 
-            .news-item {
+            .progress-item {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -116,10 +116,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .news-section .news-container {
+    .progress-section .progress-container {
         margin: 0 48px;
-        .odd-news-container, .even-news-container {
-            .news-item {
+        .odd-progress-container, .even-progress-container {
+            .progress-item {
                 width: 432px;
                 max-width: 432px;
             }
@@ -128,16 +128,16 @@
 }
 
 @media only screen and (min-width: 1440px) {
-    .news-section .news-container {
+    .progress-section .progress-container {
         margin: 0 72px;
-        .odd-news-container, .even-news-container {
-            .news-item {
+        .odd-progress-container, .even-progress-container {
+            .progress-item {
                 width: 520px;
                 max-width: 520px;
             }
         }
 
-        .even-news-container .news-item {
+        .even-progress-container .progress-item {
             padding-right: 0;
             .content {
                 padding-left: 72px;
