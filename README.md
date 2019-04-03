@@ -1,5 +1,5 @@
 # CanSat presentation web
-Presentation website for our CanSat project. Checkout (https://www.charles4th.cz/).
+Presentation website for our CanSat project. Checkout https://www.charles4th.cz/.
 
 ## Requirements
 
