@@ -68,7 +68,7 @@
 
                 &.hide {
                     visibility: hidden;
-                    height: 88px;
+                    height: 120px;
                 }
 
                 &.show {
@@ -83,7 +83,7 @@
             border-right: solid 2px black;
             flex-direction: column;
             align-items: flex-end;
-            padding-bottom: 31px;
+            //padding-top: 62px;
 
             .progress-item {
                 display: flex;
@@ -106,7 +106,7 @@
             align-self: flex-end;
             flex-direction: column;
             align-items: flex-start;
-            padding-top: 31px;
+            padding-bottom: 62px;
 
             .progress-item {
                 display: flex;
