@@ -5,6 +5,19 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
 
+    .flags-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 12px;
+
+        .flag {
+            margin: 4px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
     .gradient-container {
         display: flex;
         justify-content: center;
