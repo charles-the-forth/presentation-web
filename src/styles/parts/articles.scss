@@ -43,11 +43,12 @@
         margin: 36px;
 
         .more-articles-button {
-            width: 256px;
             background: transparent;
             border: 3px solid black;
             border-radius: 15px;
             font-size: 24px;
+            cursor: pointer;
+            width: 256px;
         }
     }
 }
