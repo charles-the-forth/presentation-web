@@ -41,12 +41,24 @@
                 height: 110px;
             }
 
-            &.infinity-pv, &.infinity-pv .logo {
+            &.trivox, &.trivox .logo {
+                height: 36px;
+            }
+
+            &.mff, &.mff .logo {
+                height: 80px;
+            }
+
+            &.jcmf, &.jcmf .logo {
                 height: 96px;
             }
 
-            &.trivox, &.trivox .logo {
-                height: 36px;
+            &.cfs, &.cfs .logo {
+                height: 96px;
+            }
+
+            &.fzu, &.fzu .logo {
+                height: 96px;
             }
         }
     }
