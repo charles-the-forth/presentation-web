@@ -13,7 +13,12 @@ module.exports = {
         new CopyWebpackPlugin([{from: './src/images', to: './images'}]),
         new CopyWebpackPlugin([{from: './src/404.html', to: './404.html'}]),
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            filename: 'index.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/cz.html',
+            filename: 'cz.html',
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
