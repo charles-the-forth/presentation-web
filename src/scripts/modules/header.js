@@ -1,5 +1,5 @@
-window.scrollDown = function() {
-    const newsSection = document.getElementById('js-eva-section');
+window.scrollDown = sectionId => {
+    const newsSection = document.getElementById(sectionId);
     window.scrollTo({
         top: newsSection.offsetTop,
         behavior: 'smooth'

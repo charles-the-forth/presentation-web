@@ -29,6 +29,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .cansat-section.slideshow-section .title-container .section-title {
+        width: 250px;
+    }
+
     .slideshow-section {
         height: 100vh;
         position: relative;
@@ -75,6 +79,10 @@
                 .text {
                     font-size: 24px;
                     margin: 0;
+
+                    .link {
+                        color: black;
+                    }
                 }
             }
 

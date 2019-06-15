@@ -15,6 +15,8 @@ const countImageSize = (imageNode, slideshowNode) => {
 
 const resizeImages = () => {
     if (window.innerWidth >= 768) {
+        countImageSize(document.querySelector('.js-cansat-section .js-image-1 .js-photo'), document.querySelector('.js-cansat-section'));
+        
         countImageSize(document.querySelector('.js-eva-section .js-image-1 .js-photo'), document.querySelector('.js-eva-section'));
         countImageSize(document.querySelector('.js-eva-section .js-image-2 .js-photo'), document.querySelector('.js-eva-section'));
         countImageSize(document.querySelector('.js-eva-section .js-image-3 .js-photo'), document.querySelector('.js-eva-section'));
