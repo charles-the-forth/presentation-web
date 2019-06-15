@@ -1,0 +1,95 @@
+.slideshow-section .slideshow {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    
+    .image-container {
+        transition-property: opacity;
+        transition: ease-in-out;
+        transition-duration: 500ms;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    
+        &.hidden {
+            opacity: 0;
+        }
+
+        .photo {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slideshow-section {
+        height: 100vh;
+        position: relative;
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 48px;
+            z-index: 20;
+
+            .section-title {
+                background: white;
+                margin-top: 0;
+                width: 200px;
+                font-size: 64px;
+            }
+        }
+
+        .slideshow {
+            position: absolute;
+            z-index: 10;
+            height: 100vh;
+            top: 0;
+        }
+
+        .info-container {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            flex-direction: column;
+            bottom: 48px;
+            z-index: 20;
+            width: 100%;
+
+            .text-background {
+                background: white;                
+                width: calc(100% - 72px);
+                max-width: 750px;
+                margin: 0 36px;
+                text-align: center;
+                padding: 18px;
+
+                .text {
+                    font-size: 24px;
+                    margin: 0;
+                }
+            }
+
+            .arrow-down-button {
+                position: relative;
+                margin-top: 48px;
+                background: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                .arrow-down {
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
