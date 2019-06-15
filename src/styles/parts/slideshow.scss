@@ -1,29 +1,76 @@
-.slideshow-section .slideshow {
-    position: relative;
-    height: 35vh;
-    width: 100%;
-    
-    .image-container {
-        transition-property: opacity;
-        transition: ease-in-out;
-        transition-duration: 500ms;
-        opacity: 1;
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        overflow: hidden;
+.slideshow-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    .section-title {
+        margin: 0;
+        padding: 32px 0;
+    }
+
+    .slideshow {
+        position: relative;
+        height: 35vh;
         width: 100%;
+        
+        .image-container {
+            transition-property: opacity;
+            transition: ease-in-out;
+            transition-duration: 500ms;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+        
+            &.hidden {
+                opacity: 0;
+            }
     
-        &.hidden {
-            opacity: 0;
+            .photo {
+                width: 100%;
+            }
+        }
+    }    
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-background {
+            padding: 0 16px;
+
+            .link {
+                color: black;
+            }
         }
 
-        .photo {
-            width: 100%;
+        .arrow-down-button.white {
+            display: none;
+        }
+
+        .arrow-down-button {
+            position: relative;
+            margin-top: 48px;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            .arrow-down {
+                height: 32px;
+
+                &.white {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -34,6 +81,9 @@
     }
 
     .slideshow-section {
+        display: block;
+        flex-direction: unset;
+        justify-content: unset;
         height: 100vh;
         position: relative;
 
@@ -49,6 +99,7 @@
                 margin-top: 0;
                 width: 200px;
                 font-size: 64px;
+                padding: 8px 0;
             }
         }
 
@@ -79,10 +130,6 @@
                 .text {
                     font-size: 24px;
                     margin: 0;
-
-                    .link {
-                        color: black;
-                    }
                 }
             }
 
@@ -96,6 +143,14 @@
 
                 .arrow-down {
                     height: 32px;
+
+                    &.white {
+                        display: block;
+                    }
+
+                    &.black {
+                        display: none;
+                    }
                 }
             }
         }
