@@ -22,7 +22,7 @@
     <div class="header-section" id="js-header-section">
         <div class="gradient-container">
             <img src="./images/logo.png" alt="Our logo" class="logo" id="js-logo">
-            <button onclick="scrollDown()" class="arrow-down-button" id="js-arrow-down-button">
+            <button onclick="scrollDown('js-eva-section')" class="arrow-down-button" id="js-arrow-down-button">
                 <img src="./images/arrow-down.svg" alt="Arrow down" class="arrow-down">
             </button>
         </div>
@@ -35,11 +35,38 @@
             </a>
         </div>-->
     </div>
+    <div id="js-eva-section" class="eva-section slideshow-section">
+        <div class="title-container">
+            <h1 class="section-title">EVA</h1>
+        </div>
+        <div class="slideshow">
+            <div class="js-image-1 image-container">
+                <img class="js-photo photo" src="./images/slideshow/parachute.jpg" alt="Parachute">
+            </div>
+            <div class="js-image-2 image-container hidden">
+                <img class="js-photo photo" src="./images/slideshow/probe.jpg" alt="Probe">
+            </div>
+            <div class="js-image-3 image-container hidden">
+                <img class="js-photo photo" src="./images/slideshow/opencansat.jpg" alt="openCanSat">
+            </div>
+            <div class="js-image-4 image-container hidden">
+                <img class="js-photo photo" src="./images/slideshow/landing.jpg" alt="Landing">
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="text-background">
+                <p class="text">EVA (Environmental Vocation Architecture) is our probe and core part of our mission. She will measure a lot of data during her fall.</p>
+            </div>
+            <button onclick="scrollDown('js-tom-section')" class="arrow-down-button" id="js-arrow-down-button-tom">
+                <img src="./images/single-arrow-down.svg" alt="Arrow down" class="arrow-down">
+            </button>
+        </div>
+    </div>
     <div id="js-tom-section" class="tom-section slideshow-section">
         <div class="title-container">
             <h1 class="section-title">TOM</h1>
         </div>
-        <div class="slideshow" id="js-eva-section">
+        <div class="slideshow">
             <div class="js-image-1 image-container">
                 <img class="js-photo photo" src="./images/slideshow/base-and-probe.jpg" alt="Base and probe">
             </div>
@@ -54,55 +81,17 @@
             <div class="text-background">
                 <p class="text">TOM (Technical Operation Machine) is our base station. He is connected to antenna and receives data which are sent by EVA. These data are display on TOM's display and also are sent via USB to connected computer.</p>
             </div>
-            <button onclick="scrollDown()" class="arrow-down-button" id="js-arrow-down-button-tom">
+            <button onclick="scrollDown('js-progress-section')" class="arrow-down-button" id="js-arrow-down-button-tom">
                 <img src="./images/single-arrow-down.svg" alt="Arrow down" class="arrow-down">
             </button>
         </div>
-    </div>    
+    </div>
     <div class="cansat-section">
         <h1 class="section-title">CanSat</h1>
         <div class="content">
             <p class="text">We are team of students participating in <a href="https://esero.sciencein.cz/cansat" class="link">CanSat</a> competition. Our goal is to make a satellite size of can. We're not alone, we also have two androids in our team - EVA and TOM.</p>
         </div>
     </div>   
-    <div class="cansat-section eva-section">
-        <h1 class="section-title">EVA</h1>
-        <div class="content">
-            <img class="image" src="./images/eva.png" alt="EVA">
-            <div class="text-content">
-                <p class="text">EVA (Environmental Vocation Architecture) is our satellite and core part of our mission. She will measure many attributes during her fall.<br><span class="bold">Measured values:</span></p>
-                <ul class="measured-values">
-                    <li class="measured-value">
-                        <p class="text">Temperature</p>
-                    </li>
-                    <li class="measured-value">
-                        <p class="text">Atmospheric pressure</p>
-                    </li>
-                    <li class="measured-value">
-                        <p class="text">Altitude</p>
-                    </li>
-                    <li class="measured-value">
-                        <p class="text">Rotation</p>
-                    </li>
-                    <li class="measured-value">
-                        <p class="text">Speed</p>
-                    </li>
-                    <li class="measured-value">
-                        <p class="text">GPS</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="cansat-section tom-section">
-        <h1 class="section-title">TOM</h1>
-        <div class="content">
-            <img class="image" src="./images/tom.png" alt="TOM">
-            <div class="text-content">
-                <p class="text">TOM (Technical Operation Machine) is our base station. He is connected to antenna and receives data which are sent by EVA. These data are display on TOM's display and also are sent via USB to connected computer.</p>
-            </div>
-        </div>
-    </div>
     <div class="progress-section">
         <h1 class="section-title">Progress of our mission</h1>
         <div class="progress-container">

@@ -1,11 +1,10 @@
-const resizePhotos = () => {
-    const photos = document.querySelectorAll('.image-container .photo');
-    const photoHeight = 10;
-    const photoWidth = 10;
-};
-
 window.addEventListener('load', () => {
-    const slideshowImages = document.getElementsByClassName('image-container');
+    imagesSlideshow('#js-eva-section .slideshow .image-container');
+    setTimeout(() => imagesSlideshow('#js-tom-section .slideshow .image-container'), 1000);
+});
+
+const imagesSlideshow = selector => {
+    const slideshowImages = document.querySelectorAll(selector);
     let index = 0;
     setInterval(() => {
         slideshowImages[index].classList.add('hidden');
@@ -15,4 +14,4 @@ window.addEventListener('load', () => {
         }
         slideshowImages[index].classList.remove('hidden');
     }, 5000);
-});
+};
